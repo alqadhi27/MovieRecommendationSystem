@@ -59,7 +59,7 @@ The recommendation system uses:
 
 Clone the repository:
 
-    git clone YOUR_GITHUB_REPOSITORY_URL
+    git clone https://github.com/alqadhi27/MovieRecommendationSystem.git
     cd MovieRecommendationSystem
 
 Install dependencies:
@@ -77,3 +77,4 @@ Under development.
 ## Academic Project
 
 Developed as part of a university Software Engineering course.
+
