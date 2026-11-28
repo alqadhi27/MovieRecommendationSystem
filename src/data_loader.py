@@ -1,7 +1,6 @@
 from pathlib import Path
 import pandas as pd
 
-
 class DataLoader:
     def __init__(self, csv_path):
         self.csv_path = Path(csv_path)
@@ -36,7 +35,7 @@ class DataLoader:
             overview = "" if pd.isna(row["overview"]) else str(row["overview"]).strip()
             genres = " ".join(row["genres_list"])
             keywords = " ".join(row["keywords_list"])
-            directors = " ".join(row["directors_list"])
+            directors = " ".join(name.replace(" ", "") for name in row["directors_list"])
             parts = [overview, genres, keywords, directors]
             return " ".join(part for part in parts if part)
         df["text"] = df.apply(combine_row, axis=1)
