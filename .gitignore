@@ -1,31 +1,15 @@
-# Python virtual environment
+# Virtual environments and caches
 .venv/
 venv/
-
-# Python cache
 __pycache__/
-*.py[cod]
-
-# Testing and type checking
+*.pyc
 .pytest_cache/
-.mypy_cache/
 
-# Environment variables and secrets
-.env
-.env.*
-.streamlit/secrets.toml
-
-# IDE settings
-.idea/
-
-# Operating system files
-Thumbs.db
-.DS_Store
-
-# Large datasets
+# Large source datasets (kept out of the repository)
 data/raw/
 data/processed/
 
-# Project tree snapshots
-tree
-tree.txt
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
