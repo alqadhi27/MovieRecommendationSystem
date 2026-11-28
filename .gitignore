@@ -26,12 +26,6 @@ Thumbs.db
 data/raw/
 data/processed/
 
-# Generated dataset
-data/movies_filtered.csv
-
 # Project tree snapshots
 tree
 tree.txt
-
-# Documentation and planning
-docs/
